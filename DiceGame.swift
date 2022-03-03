@@ -66,7 +66,7 @@ while userGuessInt != ranNum {
             } else {
                 // display message to tell user they are correct
                 print("Your guess is correct!")
-                print("It took \(tries) tries to get the right answer!")
+                print("It took \(tries) tries!")
                 // break out of loop
                 break
             }
