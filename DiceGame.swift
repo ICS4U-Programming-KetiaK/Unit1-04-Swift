@@ -29,7 +29,7 @@ let MIN = 1
 let MAX = 6
 
 // declaring variables
-var ranNum = Int.random(in: MIN_NUM..<MAX_NUM + MIN_NUM)
+var ranNum = Int.random(in: MIN..<MAX + MIN)
 var userGuessInt = 0
 var tries = 0
 var userGuessString: String
@@ -49,7 +49,7 @@ while userGuessInt != ranNum {
         }
 
         // check if guess is between 1 and 6
-        if userGuessInt >= MIN_NUM && userGuessInt <= MAX_NUM {
+        if userGuessInt >= MIN && userGuessInt <= MAX {
             // increment tries
             tries += 1
             // check if guess is too high 
